@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumen</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+
+<body>
+
+  <!-- ENCABEZADO-->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <p class="navbar-brand header-logo">Resumen Programacion</p>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+
+          <section class="navbar-nav column-gap-3">
+            <div class="btn-group">
+              <button type="button" class="btn btn-danger"><a class="header-menu nav-link"
+                  href="../index.html">HTML</a></button>
+              <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu header-opciones">
+                <li><a class="dropdown-item" href="../index.html#pagina-y-sitio-web">Pagina y sitio web</a></li>
+                <li><a class="dropdown-item" href="../index.html#pasos-previos">Pasos previos</a></li>
+                <li><a class="dropdown-item" href="../index.html#consejos">Consejos</a></li>
+                <li><a class="dropdown-item" href="../index.html#semantica">Semantica html y contenedores</a></li>
+                <li><a class="dropdown-item" href="../index.html#imagen-videos-audio-mapa">Agregar imagenes y otros</a>
+                </li>
+                <li><a class="dropdown-item" href="../index.html#agregar-enlaces">Agregar Enlaces</a></li>
+                <li><a class="dropdown-item" href="../index.html#crear-listas">Crear lista</a></li>
+                <li><a class="dropdown-item" href="../index.html#crear-tabla">Crear tabla</a></li>
+              </ul>
+            </div>
+
+            <div class="btn-group">
+              <button type="button" class="btn btn-danger"><a class="header-menu nav-link"
+                  href="./css.html">CSS</a></button>
+              <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu header-opciones">
+                <li><a class="dropdown-item" href="./css.html#TIPOS-DE-SELECTORES">Tipos de selectores</a></li>
+                <li><a class="dropdown-item" href="./css.html#TIPOS-DE-PSEUDO-CLASSES">Tipos de pseudo-classes</a></li>
+                <li><a class="dropdown-item" href="./css.html#UNIDADES-DE-MEDIDA">Unidades de medida</a></li>
+                <li><a class="dropdown-item" href="./css.html#COMO-AGREGAR-UNA-FUENTE">Como agregar una fuente</a> </li>
+                <li><a class="dropdown-item" href="./css.html#PROPIEDADES-DE-TEXTO">Propiedades de texto</a></li>
+                <li><a class="dropdown-item" href="./css.html#FONDO-DE-LA-PAGINA">Fondo de la pagina</a></li>
+                <li><a class="dropdown-item" href="./css.html#PROPIEDADES-DE-CAJAS">Propiedades de cajas</a> </li>
+                <li><a class="dropdown-item" href="./css.html#POSITION">Position</a></li>
+                <li><a class="dropdown-item" href="./css.html#DISPLAY">Display</a></li>
+                <li><a class="dropdown-item" href="./css.html#diseño-responsive">Diseño Responsive</a></li>
+                <li><a class="dropdown-item" href="./css.html#git">Git y GitHub</a></li>
+              </ul>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="contenido">
+      <h1 id="css">CSS</h1>
+      <div class="texaling">
+        <p>El CSS es un lenguaje basado en reglas: cada usuario define las reglas que especifican los grupos
+          de
+          estilos que van a aplicarse a elementos</p>
+        <p>Su nomeclatura por default al crear el archivo es style.css <br><a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">Visite la siguente pagina para ver
+            una guia completa</a></p>
+        <div class="img-center">
+          <img class="img" src="../assets/css-estructura.png" alt="">
+        </div>
+      </div>
+
+      <h2 id="TIPOS-DE-SELECTORES">TIPOS DE SELECTORES</h2>
+      <section class="flex">
+        <ul>
+          <li>
+            <h3>* </h3>
+            <p>estilos universal</p>
+          </li>
+          <li>
+            <h3>p </h3>
+            <p>estilos de tipo</p>
+          </li>
+          <li>
+            <h3>.mi-clase </h3>
+            <p>estilos de clase</p>
+          </li>
+          <li>
+            <h3>.mi-clase p </h3>
+            <p>estilos de párrafo dentro de una clase</p>
+          </li>
+          <li>
+            <h3>#mi-id </h3>
+            <p>estilos de ID</p>
+          </li>
+          <li>
+            <h3>#mi-id p </h3>
+            <p>estilo de párrafo dentro de ID</p>
+          </li>
+          <li>
+            <h3>footer </h3>
+            <p>estilo de etiquetas</p>
+          </li>
+          <li>
+            <h3>h2 + p </h3>
+            <p>estilo para párrafo que continúa a un h2</p>
+          </li>
+          <li>
+            <h3>h1, h2, h3 </h3>
+            <p>estilos múltiples</p>
+          </li>
+          <li>
+            <h3>h2 ~ p </h3>
+            <p>estilos para todos los párrafos que siguen a un h2</p>
+          </li>
+        </ul>
+      </section>
+
+
+      <h2 id="TIPOS-DE-PSEUDO-CLASSES"> TIPOS DE PSEUDO-CLASSES</h2>
+      <section class="flex">
+        <ul>
+          <li>
+            <h3>:hover</h3>
+            <p>Aplica estilos cuando el mouse se posiciona sobre el elemento.</p>
+          </li>
+          <li>
+            <h3>:active</h3>
+            <p>Aplica estilos cuando el elemento está siendo activado, típicamente al hacer clic.</p>
+          </li>
+          <li>
+            <h3>:focus</h3>
+            <p>Aplica estilos cuando el elemento tiene el foco.</p>
+          </li>
+          <li>
+            <h3>:visited</h3>
+            <p>Aplica estilos a enlaces que han sido visitados.</p>
+          </li>
+          <li>
+            <h3>:link</h3>
+            <p>Aplica estilos a los link abiertos, para que sepas en que pagina estas</p>
+          </li>
+        </ul>
+      </section>
+
+
+      <h2 id="UNIDADES-DE-MEDIDA">UNIDADES DE MEDIDA</h2>
+      <section class="flex">
+        <ul>
+          <li>
+            <h3>Fijas o Absolutas</h3>
+            <p>px</p>
+          </li>
+          <li>
+            <h3>Relativas</h3>
+            <p>%: donde 100% sería todo el espacio del contenedor</p>
+            <p>rem: Equivale a 1rem = 16 px que trae por defecto</p>
+            <p>em: Equivale a 1em = (tamaño de letra que le asigno manualmente en el inicio del CSS)</p>
+          </li>
+          <li>
+            <h3>fraccion</h3>
+            <p>fr es una medida de fraccion que solo se usa en grid</p>
+          </li>
+        </ul>
+      </section>
+
+      <h2 id="COMO-AGREGAR-UNA-FUENTE">COMO AGREGAR UNA FUENTE</h2>
+      <section class="flex">
+        <ul>
+          <li>
+            <h3>Buscar fuentes en Google Fonts</h3>
+            <p>Podemos buscar fuentes en Google Fonts, copiamos el link que nos proporciona y lo pegamos
+              en el HTML y en el CSS para ingresar una fuente tipográfica.
+              Luego, tendremos que llamarla
+              para usarla.</p>
+          </li>
+          <li>
+            <h3>Fuentes predeterminadas del equipo</h3>
+            <p>Podemos usar las fuentes predeterminadas que ya trae el equipo.</p>
+          </li>
+          <li>
+            <h3>Agregar nuevas fuentes al proyecto</h3>
+            <p>Podemos agregar nuevas fuentes descargando la carpeta y añadiéndola a nuestro proyecto.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <div class="img-center">
+          <img class="img" src="../assets/codefuentes.png" alt="">
+        </div>
+      </section>
+
+
+      <h2 id="PROPIEDADES-DE-TEXTO">PROPIEDADES DE TEXTO</h2>
+      <section class="flex">
+
+        <ul>
+          <li>
+            <details>
+              <summary>
+                <div class="d-flex">
+                  <h3>font.size</h3>
+                  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'>
+                    <path fill-rule='evenodd'
+                      d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' />
+                  </svg>
+                </div>
+                <p>Tamaño de la fuente</p>
+              </summary>
+
+              <div class="display-flex-conteiner">
+                <section class="display-flex-itens ancho-itens">
+                  <h2 id="flex">Algunas Propiedades
+                  </h2>
+
+                  <h4>font-size: clamp(15px, 3vw, 65px);</h4>
+                  <p>Fija un valor medio dentro de un rango de valores entre un límite mínimo definido y un límite
+                    máximo. La función toma tres parámetros: un valor mínimo, un valor preferido y un valor máximo
+                    permitido. <br> Le permite establecer un tamaño de fuente que crece con el tamaño de la ventanilla,
+                    pero que no va por debajo de un tamaño de fuente mínimo o por encima de un tamaño de fuente máximo.
+                  </p>
+          </li>
+          <li>
+            <h3>font-family:</h3>
+            <p>Familia tipográfica</p>
+          </li>
+          <li>
+            <h3>font-weight:</h3>
+            <p>Grosor de la fuente</p>
+          </li>
+          <li>
+            <h3>font-style:</h3>
+            <p>Estilo de fuente, inclinada o normal</p>
+          </li>
+          <li>
+            <h3>Font-variant:</h3>
+            <p>Define el aspecto de una familia tipográfica, normal, cursiva</p>
+          </li>
+          <li>
+            <h3>list-style:</h3>
+            <p>Estilo de la lista, es decir si tiene un punto negro o cuadrado</p>
+          </li>
+          <li>
+            <h3>line-height:</h3>
+            <p>Altura de la línea</p>
+          </li>
+          <li>
+            <h3>letter-spacing:</h3>
+            <p>controla el espacio entre caracteres en un texto. Esta propiedad permite ajustar la distancia entre
+              letras</p>
+          </li>
+          <li>
+            <h3>text-decoration:</h3>
+            <p>El subrayado del texto</p>
+          </li>
+          <li>
+            <h3>text-align:</h3>
+            <p>Alineación del texto</p>
+          </li>
+          <li>
+            <h3>color:</h3>
+            <p>Color del texto</p>
+          </li>
+          <li>
+            <h3>cursor: </h3>
+            <p>que se active la manito como si fuera un link
+          </li>
+        </ul>
+      </section>
+
+
+      <h2 id="FONDO-DE-LA-PAGINA">FONDO DE LA PAGINA</h2>
+      <section class="flex">
+        <ul>
+          <li>
+            <h3>background-color:</h3>
+            <p>Color de fondo</p>
+          </li>
+          <li>
+            <h3>background-image:</h3>
+            <p>Imagen de fondo</p>
+          </li>
+          <li>
+            <h3>background-position:</h3>
+            <p>Posición inicial de la imagen de fondo</p>
+          </li>
+          <li>
+            <h3>backdrop-filter:</h3>
+            <p>Filtro de fondo (puede servir para darle un degradado)</p>
+          </li>
+          <li>
+            <h3>background-repeat:</h3>
+            <p>Decidir si quieres que la foto se repita o no</p>
+          </li>
+          <li>
+            <h3>background-size:</h3>
+            <p>Tamaño real de la foto o ajuste al contenedor (puede ser cover)</p>
+          </li>
+        </ul>
+      </section>
+
+
+      <h2 id="PROPIEDADES-DE-CAJAS">PROPIEDADES DE CAJAS</h2>
+      <section class="flex">
+        <ul>
+          <li>
+            <h3>width:</h3>
+            <p>Define el ancho de un elemento</p>
+          </li>
+          <li>
+            <h3>height:</h3>
+            <p>Define el alto de un elemento</p>
+          </li>
+          <li>
+            <h3>min-width:</h3>
+            <p>define el ancho manimo de un elemento</p>
+          </li>
+          <li>
+            <h3>max-width:</h3>
+            <p>define el ancho maximo de un elemento</p>
+          </li>
+          <li>
+            <h3>min-height</h3>
+            <p>Define el alto minimo de un elemento</p>
+          </li>
+          <li>
+            <h3>max-height</h3>
+            <p>Define el alto miximo de un elemento</p>
+          </li>
+          <li>
+            <h3>top:</h3>
+            <p>Posición superior de un elemento</p>
+          </li>
+          <li>
+            <h3>right:</h3>
+            <p>Posición derecha de un elemento</p>
+          </li>
+          <li>
+            <h3>bottom:</h3>
+            <p>Posición inferior de un elemento</p>
+          </li>
+          <li>
+            <h3>left:</h3>
+            <p>Posición izquierda de un elemento</p>
+          </li>
+          <li>
+            <h3>margin:</h3>
+            <p>Distancia entre un elemento y otro</p>
+          </li>
+          <li>
+            <h3>padding:</h3>
+            <p>Distancia desde el borde de un elemento hasta su contenido</p>
+          </li>
+          <li>
+            <h3>border:</h3>
+            <p>Define el borde de un elemento, su color, estilo y grosor</p>
+          </li>
+          <li>
+            <h3>box-shadow</h3>
+            <p>Agrega sombras exteriores o interiores con la palabra inset <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_backgrounds_and_borders/Box-shadow_generator"
+                target="_blank">pagina
+                para generar sombras</a></p>
+          </li>
+        </ul>
+        <div class="img-center">
+          <img class="img" src="../assets/caja-estructura.png" alt="">
+        </div>
+      </section>
+
+
+      <h2 id="POSITION">POSITION</h2>
+      <section class="flex">
+        <ul>
+          <li>
+            <h3>Absolute</h3>
+            <p>La ubicacion que declaremos será fija, siempre en relación a los margenes de la pagina
+              entera.
+              Para manipularlo usamos top, bottom, left, right</p>
+          </li>
+          <li>
+            <h3>Relative</h3>
+            <p> Es igual que el absolute pero este toma como referencia la ubicacion del elemento. Para
+              manipularlo usamos top, bottom, left, right</p>
+          </li>
+          <li>
+            <h3>Fixed</h3>
+            <p>Es como un chicle ya que "queda fija", se queda pegado siempre. En este caso tambien toma
+              como referencia a la pagina entera, sin importar donde inicie.
+              Para manipularlo usamos top, bottom, left, right</p>
+          </li>
+          <li>
+            <h3>Static</h3>
+            <p>Por default, no se mueve de su posición original y se coloca según el flujo normal del
+              documento
+            </p>
+          </li>
+          <li>
+            <h3>Sticky</h3>
+            <p>A diferencia del <code>fixed</code>, solo se queda pegado una vez que llega al top del
+              body.
+            </p>
+          </li>
+          <li>
+            <h3>z-index</h3>
+            <p>Se utiliza para especificar qué elemento debe aparecer encima de los demás en el eje Z,
+              Los elementos con un valor de z-index mayor se sitúan sobre aquellos con valores menores
+            </p>
+          </li>
+          <li>
+            <h3>order</h3>
+            <p>Se utiliza para especificar el orden de los elementos. </p>
+          </li>
+        </ul>
+      </section>
+
+
+      <h2 id="DISPLAY">DISPLAY</h2>
+      <section class="flex">
+        <ul>
+          <li>
+            <h3>display: block</h3>
+            <p>Hace que el elemento sea un bloque que ocupa todo el ancho disponible.</p>
+          </li>
+          <li>
+            <h3>display: inline</h3>
+            <p>Hace que el elemento sea un elemento en línea, ocupando solo el ancho necesario.</p>
+          </li>
+          <li>
+            <h3 id="flex">display: inline-block;</h3>
+            <p>Combina las características de elementos en línea y en bloque.</p>
+          </li>
+
+          <!-- detalles flex -->
+          <li>
+            <details>
+              <summary>
+                <div class="d-flex">
+                  <h3>display: flex;</h3>
+                  <svg class=" flecha-menu" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'
+                    fill='#{$accordion-icon-color}'>
+                    <path fill-rule='evenodd'
+                      d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' />
+                  </svg>
+                </div>
+                <p>Establece un contenedor como un contenedor flexible, activando el modelo de caja flexible
+                  en sus elementos hijos.</p>
+              </summary>
+              <div class="display-flex-conteiner">
+                <section class="display-flex-itens">
+                  <h2 id="flex">Propiedades para los elementos<br>
+                    (flex container)
+                  </h2>
+                  <div class="img-center">
+                    <img src="https://css-tricks.com/wp-content/uploads/2018/10/01-container.svg" alt="" width="350"
+                      height="119">
+                  </div>
+
+
+                  <h4>display</h4>
+                  <p>Esto define un contenedor flexible; en línea o en bloque dependiendo del valor dado. Permite un
+                    contexto flexible para todos sus elementos secundarios directos.
+                  </p>
+
+                  <div class="formula">
+                    <pre><code class=" language-css"><span class="token selector"><span class="token class">.container</span></span> <span class="token punctuation">{</span>
+                      <span class="token property">flex-direction</span><span class="token punctuation">:</span> row | row-reverse | column | column-reverse<span class="token punctuation">;</span>
+                      <span class="token punctuation">}</span></code></pre>
+                  </div>
+
+                  <p>Tenga en cuenta que las columnas CSS no tienen ningún efecto en un contenedor flexible.</p>
+
+                  <h4>flex-direction
+                  </h4>
+
+                  <div class="img-center">
+                    <img src="https://css-tricks.com/wp-content/uploads/2018/10/flex-direction.svg" alt="" width="350">
+                  </div>
+
+                  <p>Esto establece el eje principal, definiendo así la dirección en la que se colocan los
+                    elementos
+                    flexibles en el contenedor flexible. Flexbox es (aparte del envoltorio opcional) un concepto de
+                    diseño
+                    de una sola dirección. Piense en los elementos flexibles como si se dispusieran principalmente en
+                    filas horizontales o columnas verticales.
+                  </p>
+
+
+                  <div class="formula">
+                    <pre rel="CSS" class="wp-block-csstricks-code-block  language-css" data-line=""><code markup="tt" class=" language-css"><span class="token selector"><span class="token class">.container</span></span> <span class="token punctuation">{</span>
+                      <span class="token property">flex-direction</span><span class="token punctuation">:</span> row | row-reverse | column | column-reverse<span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span></code></pre>
+                  </div>
+                  <ul>
+                    <li>
+                      <h4>row (predeterminado):</h4>
+                      <p>De izquierda a derecha </p>
+                    </li>
+                    <li><code>row-reverse</code>: de derecha a izquierda en <code>ltr</code>; de izquierda a derecha
+                      en
+                      <code>rtl</code>
+                    </li>
+                    <li><code>column</code>: igual que <code>row</code> pero de arriba hacia abajo</li>
+                    <li><code>column-reverse</code>: igual que <code>row-reverse</code> pero de abajo hacia arriba
+                    </li>
+                  </ul>
+                  <h4>flex-wrap
+                  </h4>
+                  <div class="img-center">
+                    <img src="https://css-tricks.com/wp-content/uploads/2018/10/flex-wrap.svg" alt="" width="350">
+                  </div>
+                  <p>De forma predeterminada, todos los elementos flexibles intentarán caber en una línea. Puede
+                    cambiar
+                    eso y permitir que los elementos se ajusten según sea necesario con esta propiedad.
+                  </p>
+                  <div class="formula">
+                    <pre rel="CSS" class="wp-block-csstricks-code-block  language-css" data-line=""><code markup="tt" class=" language-css"><span class="token selector"><span class="token class">.container</span></span> <span class="token punctuation">{</span>
+                      <span class="token property">flex-wrap</span><span class="token punctuation">:</span> nowrap | wrap | wrap-reverse<span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span></code></pre>
+                  </div>
+                  <ul>
+                    <li><code>nowrap</code> (predeterminado): todos los elementos flexibles estarán en una línea</li>
+                    <li><code>wrap</code>: los elementos flexibles se envolverán en varias líneas, de arriba hacia
+                      abajo.
+                    </li>
+                    <li><code>wrap-reverse</code>: los elementos flexibles se envolverán en varias líneas de abajo
+                      hacia
+                      arriba.</li>
+                  </ul>
+                  <h4>flex-flow</h4>
+                  <p>Esto es una forma abreviada para las propiedades <code>flex-direction</code> y
+                    <code>flex-wrap</code>,
+                    las cuales juntas definen los ejes principal y transversal del contenedor flexible. El valor
+                    predeterminado es
+                    <code>row nowrap</code>.
+                  </p>
+                  <div class="formula">
+                    <pre rel="CSS" class="wp-block-csstricks-code-block  language-css" data-line=""><code markup="tt" class=" language-css"><span class="token selector"><span class="token class">.container</span></span> <span class="token punctuation">{</span>
+                      <span class="token property">flex-flow</span><span class="token punctuation">:</span> column wrap<span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span></code></pre>
+                  </div>
+
+                  <h4>justify-content</h4>
+                  <div class="img-center">
+                    <img src="https://css-tricks.com/wp-content/uploads/2018/10/justify-content.svg" alt="" width="350">
+                  </div>
+                  <p><br>Esto define la alineación a lo largo del eje principal. Ayuda a distribuir el espacio libre
+                    adicional sobrante cuando todos los elementos flexibles de una línea son inflexibles o son
+                    flexibles
+                    pero han alcanzado su tamaño máximo. También ejerce cierto control sobre la alineación de los
+                    elementos cuando desbordan la línea.
+                  </p>
+                  <div class="formula">
+                    <pre rel="CSS" class="wp-block-csstricks-code-block  language-css" data-line=""><code markup="tt" class=" language-css"><span class="token selector"><span class="token class">.container</span></span> <span class="token punctuation">{</span>
+                      <span class="token property">justify-content</span><span class="token punctuation">:</span> flex-start | flex-end | center | space-between | space-around |
+                                               space-evenly | start | end | left | right <span class="token number">...</span> <span class="token operator">+</span> safe | unsafe<span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span></code></pre>
+                  </div>
+
+
+                  <h4>align-items
+                  </h4>
+                  <div class="img-center">
+                    <img src="https://css-tricks.com/wp-content/uploads/2018/10/align-items.svg" alt="" width="350">
+                  </div>
+                  <p><br>Esto define el comportamiento predeterminado para cómo se disponen los elementos flexibles
+                    a
+                    lo
+                    largo del
+                    <strong>eje transversal</strong> en la línea actual. Piensa en ello como la versión de
+                    <code>justify-content</code> para
+                    el eje transversal (perpendicular al eje principal).
+                  </p>
+                  <div class="formula">
+                    <pre rel="CSS" class="wp-block-csstricks-code-block  language-css" data-line=""><code markup="tt" class=" language-css"><span class="token selector"><span class="token class">.container</span></span> <span class="token punctuation">{</span>
+                      <span class="token property">align-items</span><span class="token punctuation">:</span> stretch | flex-start | flex-end | center | baseline | first baseline |
+                                         last baseline | start | end | self-start | self-end <span class="token operator">+</span> <span class="token number">...</span> safe | unsafe<span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span></code></pre>
+                  </div>
+
+                  <h4>align-content
+                  </h4>
+                  <div class="img-center">
+                    <img src="https://css-tricks.com/wp-content/uploads/2018/10/align-content.svg" alt="" width="350">
+                  </div>
+                  <p><br>Esto alinea las líneas de un contenedor flexible cuando hay espacio adicional en el
+                    eje transversal,
+                    de manera similar a cómo <code>justify-content</code> alinea elementos individuales en el eje
+                    principal.
+                  </p>
+                  <p><strong>Nota:</strong> Esta propiedad solo tiene efecto en contenedores
+                    flexibles
+                    de varias líneas,
+                    donde <code>flex-wrap</code> está establecido en <code>wrap</code> o <code>wrap-reverse</code>).
+                    Un
+                    contenedor
+                    flexible de una sola línea (es decir, donde <code>flex-wrap</code> tiene su valor
+                    predeterminado,
+                    <code>no-wrap</code>) no reflejará <code>align-content</code>.
+                  </p>
+                  <div class="formula">
+                    <pre rel="CSS" class="wp-block-csstricks-code-block  language-css" data-line=""><code markup="tt" class=" language-css"><span class="token selector"><span class="token class">.container</span></span> <span class="token punctuation">{</span>
+                      <span class="token property">align-content</span><span class="token punctuation">:</span> flex-start | flex-end | center | space-between | space-around |
+                                             space-evenly | stretch | start | end | baseline | first baseline |
+                                             last baseline <span class="token operator">+</span> <span class="token number">...</span> safe | unsafe<span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span></code></pre>
+                  </div>
+
+                  <h4>gap, row-gap,
+                    column-gap
+                  </h4>
+                  <div class="img-center">
+                    <img src="https://css-tricks.com/wp-content/uploads/2021/09/gap-1.svg" alt=""
+                      class="wp-image-351683" width="350">
+                  </div>
+                  <p>La propiedad <code>gap</code></a>
+                    controla
+                    explícitamente el espacio entre elementos flexibles. Aplica ese espaciado <em>solo entre los
+                      elementos</em>, no en los bordes exteriores.
+                  </p>
+                  <div class="formula">
+                    <pre rel="CSS" class="wp-block-csstricks-code-block  language-css" data-line=""><code markup="tt" class=" language-css"><span class="token selector"><span class="token class">.container</span></span> <span class="token punctuation">{</span>
+                      <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+                      <span class="token number">...</span>
+                      <span class="token property">gap</span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token unit">px</span><span class="token punctuation">;</span>
+                      <span class="token property">gap</span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token unit">px</span> <span class="token number">20</span><span class="token unit">px</span><span class="token punctuation">;</span> <span class="token comment">/* row-gap column gap */</span>
+                      <span class="token property">row-gap</span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token unit">px</span><span class="token punctuation">;</span>
+                      <span class="token property">column-gap</span><span class="token punctuation">:</span> <span class="token number">20</span><span class="token unit">px</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span></code></pre>
+                  </div>
+
+                  <p>El comportamiento podría considerarse como un gutter <em>mínimo</em>, como si el gutter fuera
+                    de
+                    alguna manera
+                    más grande (debido a algo como <code>justify-content: space-between;</code>), entonces el
+                    espacio
+                    solo
+                    tendrá
+                    efecto si ese espacio termina siendo más pequeño.
+                  </p>
+                  <p>No es exclusivo para flexbox, <code>gap</code> también funciona en grid y en el diseño de
+                    varias
+                    columnas.
+                  </p>
+                </section>
+
+
+                <section class="display-flex-itens">
+                  <h2>Propiedades para los elementos<br>(flex items)
+                  </h2>
+                  <div class="img-center">
+                    <img src="https://css-tricks.com/wp-content/uploads/2018/10/02-items.svg" alt="" width="350"
+                      height="119">
+                  </div>
+                  <h4>order
+                  </h4>
+                  <div class="img-center">
+                    <img src="https://css-tricks.com/wp-content/uploads/2018/10/order.svg" alt="" width="350"
+                      height="282">
+                  </div>
+                  <p><br>Por defecto, los elementos flexibles se disponen en el orden de origen. Sin embargo, la
+                    propiedad
+                    <code>order</code> controla el orden en el que aparecen en el contenedor flexible.
+                  </p>
+                  <div class="formula">
+                    <pre rel="CSS" class="wp-block-csstricks-code-block  language-css" data-line=""><code markup="tt" class=" language-css"><span class="token selector"><span class="token class">.item</span></span> <span class="token punctuation">{</span>
+                      <span class="token property">order</span><span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">;</span> <span class="token comment">/* default is 0 */</span>
+                    <span class="token punctuation">}</span></code></pre>
+                  </div>
+                  <p>Los elementos con el mismo <code>order</code> vuelven al orden de origen.
+                  </p>
+
+                  <h4>flex-grow</h4>
+                  <div class="img-center">
+                    <img src="https://css-tricks.com/wp-content/uploads/2018/10/flex-grow.svg" alt="" width="350">
+                  </div>
+                  <p><br>Esto define la capacidad de un elemento flexible para crecer si es necesario. Acepta un valor
+                    sin
+                    unidades que sirve como proporción. Dicta la cantidad de espacio disponible dentro del contenedor
+                    flexible que el elemento debería ocupar.
+                  </p>
+                  <p>Si todos los elementos tienen <code>flex-grow</code> establecido en <code>1</code>, el espacio
+                    restante en el contenedor se distribuirá equitativamente entre todos los hijos. Si uno de los
+                    hijos
+                    tiene un valor de <code>2</code>, ese hijo ocuparía el doble del espacio que cualquiera de los
+                    otros
+                    (o al menos lo intentará).
+                  </p>
+                  <div class="formula">
+                    <pre rel="CSS" class="wp-block-csstricks-code-block  language-css" data-line=""><code markup="tt" class=" language-css"><span class="token selector"><span class="token class">.item</span></span> <span class="token punctuation">{</span>
+                      <span class="token property">flex-grow</span><span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">;</span> <span class="token comment">/* default 0 */</span>
+                    <span class="token punctuation">}</span></code></pre>
+                  </div>
+                  <p>Los números negativos no son válidos.
+                  </p>
+
+                  <h4>flex-shrink</h4>
+                  <p>Esto define la capacidad de un elemento flexible para contraerse si es necesario.
+                  </p>
+                  <div class="formula">
+                    <pre rel="CSS" class="wp-block-csstricks-code-block  language-css" data-line=""><code markup="tt" class=" language-css"><span class="token selector"><span class="token class">.item</span></span> <span class="token punctuation">{</span>
+                      <span class="token property">flex-shrink</span><span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">;</span> <span class="token comment">/* default 1 */</span>
+                    <span class="token punctuation">}</span></code></pre>
+                  </div>
+                  <p>Los números negativos no son válidos.
+                  </p>
+                  <h4>flex-basis
+                  </h4>
+                  <p>Esto define el tamaño predeterminado de un elemento antes de que se distribuya el espacio
+                    restante.
+                    Puede ser una longitud (por ejemplo, 20%, 5rem, etc.) o una palabra clave. La palabra clave
+                    <code>auto</code> significa "mira mi propiedad de ancho o alto" (lo que se hacía temporalmente con
+                    la
+                    palabra clave <code>main-size</code> hasta que fue desaprobada). La palabra clave
+                    <code>content</code>
+                    significa "ajústalo según el contenido del elemento" - esta palabra clave aún no tiene un buen
+                    soporte, por lo que es difícil de probar y aún más difícil saber qué hacen sus equivalentes
+                    <code>max-content</code>, <code>min-content</code> y <code>fit-content</code>.
+                  </p>
+
+
+
+                  <div class="formula">
+                    <pre rel="CSS" class="wp-block-csstricks-code-block  language-css" data-line=""><code markup="tt" class=" language-css"><span class="token selector"><span class="token class">.item</span></span> <span class="token punctuation">{</span>
+                      <span class="token property">flex-basis</span><span class="token punctuation">:</span>  | auto<span class="token punctuation">;</span> <span class="token comment">/* default auto */</span>
+                    <span class="token punctuation">}</span></code></pre>
+                  </div>
+
+
+                  <p>Si se establece en <code>0</code>, el espacio adicional alrededor del contenido no se tiene en
+                    cuenta. Si se establece en <code>auto</code>, el espacio adicional se distribuye según su valor de
+                    <code>flex-grow</code>. <a href="http://www.w3.org/TR/css3-flexbox/images/rel-vs-abs-flex.svg"
+                      rel="noopener">Consulta esta gráfica.</a>
+                  </p>
+
+
+                  <h4>flex
+                  </h4>
+
+
+                  <p>Esto es la forma abreviada de <code>flex-grow,</code> <code>flex-shrink</code> y
+                    <code>flex-basis</code> combinados. Los segundos y terceros parámetros (<code>flex-shrink</code> y
+                    <code>flex-basis</code>) son opcionales. El valor predeterminado es <code>0 1 auto</code>, pero si
+                    lo
+                    configuras con un solo valor numérico, como <code>flex: 5;</code>, eso cambia el
+                    <code>flex-basis</code> a 0%, por lo que es como configurar
+                    <code>flex-grow: 5; flex-shrink: 1; flex-basis: 0%;</code>.
+                  </p>
+
+
+
+                  <div class="formula">
+                    <pre rel="CSS" class="wp-block-csstricks-code-block  language-css" data-line=""><code markup="tt" class=" language-css"><span class="token selector"><span class="token class">.item</span></span> <span class="token punctuation">{</span>
+                      <span class="token property">flex</span><span class="token punctuation">:</span> none | [ &lt;<span class="token string">'flex-grow'</span>&gt; &lt;<span class="token string">'flex-shrink'</span>&gt;? || &lt;<span class="token string">'flex-basis'</span>&gt; ]
+                    <span class="token punctuation">}</span></code></pre>
+                  </div>
+
+
+                  <p><strong>Se recomienda que utilices esta propiedad abreviada</strong> en lugar de establecer las
+                    propiedades individuales. La propiedad abreviada establece los otros valores de manera
+                    inteligente.
+                  </p>
+
+                  <h4>align-self
+                  </h4>
+
+                  <div class="img-center">
+                    <img src="https://css-tricks.com/wp-content/uploads/2018/10/align-self.svg" alt="" width="100%" />
+                  </div>
+
+                  <p><br>Esto permite que la alineación predeterminada (o la especificada por
+                    <code>align-items</code>)
+                    sea anulada para elementos flexibles individuales.
+                  </p>
+
+                  <p>Por favor, consulta la explicación de <code>align-items</code> para entender los valores
+                    disponibles.
+                  </p>
+
+                  <div class="formula">
+                    <pre rel="CSS" class="wp-block-csstricks-code-block  language-css" data-line=""><code markup="tt" class=" language-css"><span class="token selector"><span class="token class">.item</span></span> <span class="token punctuation">{</span>
+                      <span class="token property">align-self</span><span class="token punctuation">:</span> auto | flex-start | flex-end | center | baseline | stretch<span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span></code></pre>
+                  </div>
+
+                  <p>Ten en cuenta que <code>float</code>, <code>clear</code> y <code>vertical-align</code> no tienen
+                    efecto en un elemento flexible.
+                  </p>
+
+                  <!-- boton -->
+                  <div class="descarga-flex">
+                    <div class="descarga"><a href="../assets/descarga-flex.png">Descargar
+                        resumen</a>
+                    </div>
+                  </div>
+
+
+                </section>
+              </div>
+
+            </details>
+
+          </li>
+          <!-- detalles grid -->
+          <li>
+            <details>
+              <summary>
+                <div class="d-flex">
+                  <h3>display: grid</h3>
+                  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'>
+                    <path fill-rule='evenodd'
+                      d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' />
+                  </svg>
+                </div>
+                <p>Permite distribuir un sitio web en una cuadrícula, teniendo el control total sobre la posición de
+                  los elementos, tanto en las filas como en las columnas.</p>
+              </summary>
+
+              <div class="display-flex-conteiner">
+                <section class="display-flex-itens">
+                  <h2 id="flex">Propiedades para los elementos<br>
+                    (grid container)
+                  </h2>
+
+                  <h4>grid-template-rows</h4>
+                  <p>Define las filas de la cuadrícula con una lista de valores separados por espacios. Los
+                    valores representan el tamaño, asi como la cantidad de filas y el espacio entre ellos representa la
+                    línea de
+                    cuadrícula. Ademas podemos abreviar usando la propiedad repeat</p>
+
+                  <h4>grid-template-columns</h4>
+                  <p id="grid-template-areas">Define las columnas de la cuadrícula con una lista de valores separados
+                    por espacios. Los
+                    valores representan el tamaño, asi como la cantidad de columnas y el espacio entre ellos representa
+                    la línea de
+                    cuadrícula.</p>
+
+                  <h4>grid-template-areas</h4>
+                  <p>Define una plantilla de cuadrícula haciendo referencia a los nombres de las áreas de cuadrícula que
+                    se especifican con la propiedad <a href="#flex">"grid-area"</a> en cada contenedor item. Repetir el
+                    nombre de un área de
+                    cuadrícula hace que el contenido
+                    abarque esas celdas. Un punto significa una celda vacía.</p>
+
+                  <div class="formula">
+                    <pre rel="CSS" class="wp-block-csstricks-code-block  language-css" data-line=""><code markup="tt" class=" language-css"><span class="token selector"><span class="token class">.item-a</span></span> <span class="token punctuation">{</span>
+                    <span class="token selector"><span class="token class">.container</span></span> <span class="token punctuation">{</span>
+                      <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span>
+                      <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> <span class="token number">50</span><span class="token unit">px</span> <span class="token number">50</span><span class="token unit">px</span> <span class="token number">50</span><span class="token unit">px</span> <span class="token number">50</span><span class="token unit">px</span><span class="token punctuation">;</span>
+                      <span class="token property">grid-template-rows</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
+                      <span class="token property">grid-template-areas</span><span class="token punctuation">:</span> 
+                        <span class="token string">"header header header header"</span>
+                        <span class="token string">"main main . sidebar"</span>
+                        <span class="token string">"footer footer footer footer"</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span></code></pre>
+                  </div>
+
+                  <p>Eso creará una cuadrícula de cuatro columnas de ancho por tres filas de alto. Toda la fila superior
+                    estará compuesta por el área del encabezado. La fila central se compondrá de dos áreas principales,
+                    una celda vacía y un área de barra lateral. La última fila es todo pie de página.</p>
+
+                  <div class="img-center">
+                    <img src="https://css-tricks.com/wp-content/uploads/2018/11/dddgrid-template-areas.svg" alt=""
+                      width="50%">
+                  </div>
+
+                  <h4>row-gap</h4>
+                  <p>Permite dejar un espacio entre las filas</p>
+
+                  <h4>column-gap</h4>
+                  <p>Permite dejar un espacio entre las columnas</p>
+
+                  <h4>justify-items</h4>
+                  <p>Alinea los elementos de cuadrícula a lo largo del eje en línea (fila). Este valor se aplica a todos
+                    los elementos de cuadrícula dentro del contenedor align-items.</p>
+
+
+                  <div class="formula">
+                    <pre rel="CSS"><code><span class="token selector"><span class="token class">.container</span></span> <span class="token punctuation">{</span>
+                    <span class="token property">justify-items</span><span class="token punctuation">:</span> start | end | center | stretch<span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span></code></pre>
+                  </div>
+
+                  <p>
+                    <font>Este comportamiento también se puede establecer en elementos de cuadrícula individuales a
+                      través de la propiedad.</font><code>justify-self</code>
+                  </p>
+
+
+                  <h4>align-items</h4>
+                  <p>Alinea los elementos de cuadrícula a lo largo del eje de bloque (columna). Este valor se aplica a
+                    todos los elementos de cuadrícula dentro del contenedor.</p>
+                  <div>
+
+                    <div class="formula">
+                      <pre rel="CSS"><code><span class="token selector"><span class="token class">.container</span></span> <span class="token punctuation">{</span>
+                    <span class="token property">align-items</span><span class="token punctuation">:</span> start | end | center | stretch<span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span></code></pre>
+                    </div>
+
+                    <p>
+                      <font>Este comportamiento también se puede establecer en elementos de cuadrícula individuales a
+                        través de la propiedad.</font><code>align-self</code>
+                    </p>
+
+                    <p>
+                      <font>También hay palabras clave modificadoras y (el uso es como ). La palabra clave significa
+                        "intente alinear de esta manera, pero no si eso significa alinear un elemento de manera que se
+                        mueva a un área de desbordamiento inaccesible", mientras que permitirá mover contenido a áreas
+                        inaccesibles ("pérdida de datos").</font>
+                      <code>safe</code><code>unsafe</code><code>align-items: safe end</code><code>safe</code><code>unsafe</code>
+                    </p>
+                  </div>
+
+                  <h4>justify-content</h4>
+                  <p>Puede establecer la alineación de la cuadrícula dentro del contenedor de cuadrícula. Esta
+                    propiedad
+                    alinea la cuadrícula a lo largo del eje en línea (fila).</p>
+
+                  <div>
+
+                    <pre rel="CSS"><code><span class="token selector"><span class="token class">.container</span></span> <span class="token punctuation">{</span>
+                        <span class="token property">justify-content</span><span class="token punctuation">:</span> start | end | center | stretch | space-around | space-between | space-evenly<span class="token punctuation">;</span>    
+                      <span class="token punctuation">}</span></code></pre>
+
+
+                    <h4>align-content</h4>
+                    <p> Puede establecer la alineación de la cuadrícula dentro del contenedor de cuadrícula. Esta
+                      propiedad alinea la cuadrícula a lo largo del eje del bloque (columna) </p>
+                    <div>
+                      <p>Valores:</p>
+
+
+                      <div class="formula">
+                        <pre rel="CSS" class="wp-block-csstricks-code-block language-css" data-line="">
+                          <code markup="tt" class="language-css">
+                            <span class="token selector"><span class="token class">.container</span></span> <span class="token punctuation">{</span>
+                            <span class="token property">align-content</span><span class="token punctuation">:</span> start | end | center | stretch | space-around | space-between | space-evenly<span class="token punctuation">;</span>
+                            <span class="token punctuation">}</span>
+                          </code>
+                        </pre>
+                      </div>
+
+                      <h4>place-items</h4>
+                      <p>Establece las propiedades align-items y justify-items en una sola propiedad. El primer valor
+                        establece , el segundo valor . Si se omite el segundo valor, el primer valor se asigna a ambas
+                        propiedades.</p>
+
+                      <div class="formula">
+                        <pre rel="CSS" class="wp-block-csstricks-code-block  language-css" data-line=""><code markup="tt" class=" language-css"><span class="token selector"><span class="token class">.center</span></span> <span class="token punctuation">{</span>
+                    <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span>
+                    <span class="token property">place-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+                  <span class="token punctuation">}</span></code></pre>
+                      </div>
+                </section>
+
+
+
+                <section class="display-flex-itens">
+                  <h2 id="flex">Propiedades para los elementos<br>
+                    (grid itens)
+                  </h2>
+
+                  <div>
+                    <p>
+                      Es probable que termines usando
+                      muchas unidades fraccionarias en CSS Grid, como . Esencialmente significan "porción del espacio
+                      restante". Por lo tanto, una declaración como:<code>1fr</code>
+                    </p>
+                    <div class="formula">
+                      <pre rel="CSS" class="wp-block-csstricks-code-block  language-css"
+                        data-line=""><code markup="tt" class=" language-css"><span class="token property">grid-template-columns</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token unit">fr</span> <span class="token number">3</span><span class="token unit">fr</span><span class="token punctuation">;</span></code></pre>
+                    </div>
+                    <p>
+                      Significa, a grandes rasgos, .
+                      Excepto que esos valores porcentuales son mucho más firmes que las unidades fraccionarias. Por
+                      ejemplo, si agregó relleno a esas columnas basadas en porcentajes, ahora ha roto el 100 % del
+                      ancho (suponiendo un modelo de caja). Las unidades fraccionarias también son mucho más amigables
+                      en combinación con otras unidades, como puedes imaginar:
+                      <code>25% 75%</code><code>content-box</code>
+                    </p>
+                    <div class="formula">
+                      <pre rel="CSS" class="wp-block-csstricks-code-block  language-css"
+                        data-line=""><code markup="tt" class=" language-css"><span class="token property">grid-template-columns</span><span class="token punctuation">:</span> <span class="token number">50</span><span class="token unit">px</span> min-content <span class="token number">1</span><span class="token unit">fr</span><span class="token punctuation">;</span></code></pre>
+                    </div>
+
+                  </div>
+
+                  <h4>grid-area</h4>
+                  <p>Asigna un nombre a un elemento para que una <a href="#grid-template-areas">plantilla creada</a> con
+                    la propiedad pueda hacer
+                    referencia
+                    a él.</p>
+                  <div class="formula">
+                    <pre rel="CSS" class="wp-block-csstricks-code-block  language-css" data-line=""><code markup="tt" class=" language-css"><span class="token selector"><span class="token class">.item-a</span></span> <span class="token punctuation">{</span>
+                      <span class="token property">grid-area</span><span class="token punctuation">:</span> header<span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                    <span class="token selector"><span class="token class">.item-b</span></span> <span class="token punctuation">{</span>
+                      <span class="token property">grid-area</span><span class="token punctuation">:</span> main<span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                    <span class="token selector"><span class="token class">.item-c</span></span> <span class="token punctuation">{</span>
+                      <span class="token property">grid-area</span><span class="token punctuation">:</span> sidebar<span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                    <span class="token selector"><span class="token class">.item-d</span></span> <span class="token punctuation">{</span>
+                      <span class="token property">grid-area</span><span class="token punctuation">:</span> footer<span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span></code></pre>
+                  </div>
+
+
+                  <h4>justify-self</h4>
+                  <p>Alinea un elemento de cuadrícula dentro de una celda a lo largo del eje en línea (fila). Este valor
+                    se aplica a un elemento de cuadrícula dentro de una sola celda</p>
+
+
+                  <div class="formula">
+                    <pre rel="CSS" class="wp-block-csstricks-code-block language-css" data-line="">
+                  <code markup="tt" class="language-css">
+                    <span class="token selector"><span class="token class">.item</span></span> <span class="token punctuation">{</span>
+                    <span class="token property">justify-self</span><span class="token punctuation">:</span> start | end | center | stretch<span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                  </code>
+                </pre>
+                  </div>
+
+                  <h4>align-self</h4>
+                  <p>Alinea un elemento de cuadrícula dentro de una celda a lo largo del eje de bloque (columna). Este
+                    valor se aplica a un elemento de cuadrícula dentro de una sola celda</p>
+
+                  <pre rel="CSS" class="wp-block-csstricks-code-block  language-css" data-line=""><code markup="tt" class=" language-css"><span class="token selector"><span class="token class">.item</span></span> <span class="token punctuation">{</span>
+                  <span class="token property">align-self</span><span class="token punctuation">:</span> start | end | center | stretch<span class="token punctuation">;</span>
+                <span class="token punctuation">}</span></code></pre>
+
+                  <h4>place-self</h4>
+                  <p>Establece las propiedades align-self y justify-self en una sola propiedad. El primer valor
+                    establece , el segundo valor . Si se omite el segundo valor, el primer valor se asigna a ambas
+                    propiedades.</p>
+                  <div>
+
+                    <p>Ejemplos:</p>
+
+                    <pre rel="CSS" class="wp-block-csstricks-code-block language-css" data-line="">
+                    <code markup="tt" class="language-css">
+                      <span class="token selector"><span class="token class">.item-a</span></span> <span class="token punctuation">{</span>
+                      <span class="token property">place-self</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+                      <span class="token punctuation">}</span>
+                    </code>
+                  </pre>
+
+                    <figure>
+                      <img loading="lazy" decoding="async"
+                        src="https://css-tricks.com/wp-content/uploads/2018/11/place-self-center.svg"
+                        alt="place self set to center" width="399" height="176">
+                    </figure>
+
+                    <pre rel="CSS" class="wp-block-csstricks-code-block language-css" data-line="">
+                  <code markup="tt" class="language-css">
+                    <span class="token selector"><span class="token class">.item-a</span></span> <span class="token punctuation">{</span>
+                    <span class="token property">place-self</span><span class="token punctuation">:</span> center stretch<span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                  </code>
+                </pre>
+
+                    <figure>
+                      <img loading="lazy" decoding="async"
+                        src="https://css-tricks.com/wp-content/uploads/2018/11/place-self-center-stretch.svg"
+                        alt="place set set to center stretch" width="396" height="174">
+                    </figure>
+
+                    <p>                     
+                        Todos los navegadores principales, excepto Edge, admiten la propiedad abreviada.                      
+                      <code>place-self</code>
+                    </p>
+
+
+                  </div>
+
+
+                  <!-- boton -->
+                  <div class="descarga-flex">
+                    <div class="descarga"><a href="../assets/descarga-grid.png">Descargar
+                        resumen</a>
+                    </div>
+                  </div>
+
+                </section>
+              </div>
+            </details>
+          </li>
+          <!-- detalles boostrap -->
+          <li>
+            <details>
+              <summary>
+                <div class="d-flex">
+                  <h3>Boostrap</h3>
+                  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'>
+                    <path fill-rule='evenodd'
+                      d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' />
+                  </svg>
+                </div>
+                <p>Es un framework el cual integra grid y flex a partir de class. Este tiene codigos css ya
+                  predeterminados y al poner la class se aplican, la mejor parte es que vuelve responsive todo el
+                  proyecto. para saber mas visita esta <a href="https://getbootstrap.com/" target="_blank">pagina</a>
+                </p>
+              </summary>
+
+              <div class="display-flex-conteiner">
+                <section class="display-flex-itens ancho-itens">
+                  <h2 id="flex">Algunas Propiedades Basicas
+                  </h2>
+
+                  <h4>class="container"</h4>
+                  <p>Un contenedor receptivo de ancho fijo</p>
+
+                  <h4>class="row"</h4>
+                  <p>un contenedor en fila</p>
+
+                  <h4>class="col"</h4>
+                  <p>para aclarar cuando es una columna</p>
+                </section>
+              </div>
+            </details>
+          </li>
+        </ul>
+      </section>
+
+      <h2 id="diseño-responsive">Diseño Responsive</h2>
+      <section class="flex">
+        <div>
+          <p>Las media query sirven para hacer que nuestro sitio se vea de cierta forma en cierta situacion. Siempre se
+            pone
+            al final de css. si codeamos desde Desktop a mobile usamos <code>max-width</code> y si codeamos desde Mobile
+            a
+            desktop (first mobile) usamos <code>min-width</code>. Tambien revisar que en el encabezado html tenemos que
+            tener la etiqueta meta viewport.</p>
+
+          <ul>
+            <li>
+              <h3>Escritorio</h3>
+              <p>El ancho a usar es 781px - sin maximo</p>
+            </li>
+            <li>
+              <h3>Tablet</h3>
+              <p>El ancho a usar es 481px - 780px</p>
+            </li>
+            <li>
+              <h3>Mobile</h3>
+              <p>El ancho a usar es 320px - 480</p>
+            </li>
+          </ul>
+
+          <div class="img-center">
+            <img class="img" src="../assets/media-query.png" alt="">
+          </div>
+        </div>
+      </section>
+
+      <h2 id="git">Git y GidHub</h2>
+      <section class="flex">
+        <ul>
+          <li>
+            <details>
+              <summary>
+                <div class="d-flex">
+                  <h3>Git</h3>
+                  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'>
+                    <path fill-rule='evenodd'
+                      d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' />
+                  </svg>
+                </div>
+                <p>Es una terminal la cual se puede instalar en nuestro dispositivo y luego podemos crear copias para
+                  subirlas al repositorio</p>
+              </summary>
+              <div class="display-flex-conteiner">
+                <section class="display-flex-itens ancho-itens">
+                  <h2>creando un repositorio desde cero</h2>
+
+                  <h4>git --version</h4>
+                  <p>Muestra la versión de Git instalada en tu sistema.</p>
+
+                  <h4>git config --global user.name "Tu Nombre"</h4>
+                  <p>Establece el nombre de usuario que se utilizará para las confirmaciones de commit.</p>
+
+                  <h4>git config --global user.email "tu_email@example.com"</h4>
+                  <p>Establece el correo electrónico que se utilizará para las confirmaciones de commit.</p>
+
+                  <h4>git config --list</h4>
+                  <p>Muestra la configuración actual de Git para el repositorio y comprobamos si guardamos bien el
+                    usuario.</p>
+
+                  <h4>git init</h4>
+                  <p>Inicializa un repositorio Git en el directorio actual, esto solo se hace la primera vez si no hay
+                    ninguna carpeta de git en nuestro proyecto.</p>
+
+                  <h4>git add .</h4>
+                  <p>Agrega un archivo al área de preparación para ser incluido en el próximo commit. la parte del "."
+                    podemos remplazarla por el archivo espesifico que queremos que guarde.</p>
+
+                  <h4>git commit -m "mensaje"</h4>
+                  <p>Guarda los cambios realizados en el repositorio localmente.</p>
+
+                  <h4>git branch</h4>
+                  <p>Muestra todas las ramas en el repositorio local.</p>
+
+                  <h4>git branch &lt;nueva-rama&gt;</h4>
+                  <p>Crea una nueva rama en el repositorio.</p>
+
+                  <h4>git checkout &lt;rama&gt;</h4>
+                  <p>Cambia a la rama especificada.</p>
+
+                  <h4>git branch -M main</h4>
+                  <p>Renombra la rama actual a 'main'.</p>
+
+                  <h4>git remote add origin &lt;url&gt;</h4>
+                  <p>Conecta tu repositorio local con un repositorio remoto en la URL especificada que nos dara github.
+                  </p>
+
+                  <h4>git push -u origin main</h4>
+                  <p>Sube los cambios locales a la rama principal del repositorio remoto y establece la conexión entre
+                    la rama local y la rama remota.</p>
+
+                  <h2>guardando nuevos cambios</h2>
+
+                  <h4>git status</h4>
+                  <p>Muestra el estado actual del repositorio, incluyendo los archivos modificados, los archivos en el
+                    área de preparación y los que no están siendo rastreados por Git.
+                  </p>
+
+                  <h4>git branch</h4>
+                  <p>Muestra todas las ramas en el repositorio local.</p>
+
+                  <h4>git checkout &lt;rama&gt;</h4>
+                  <p>Cambia a la rama especificada.</p>
+
+                  <h4>git add .</h4>
+                  <p>Agrega un archivo al área de preparación para ser incluido en el próximo commit. la parte del "."
+                    podemos remplazarla por el archivo espesifico que queremos que guarde.</p>
+
+                  <h4>git commit -m "mensaje"</h4>
+                  <p>Guarda los cambios realizados en el repositorio localmente.</p>
+
+                  <h4>git push origin &lt;rama&gt;</h4>
+                  <p>Sube los cambios locales a un repositorio remoto en la rama especificada.</p>
+
+                  <h4>git log</h4>
+                  <p>Muestra un registro de todos los commits realizados en el repositorio.</p>
+
+                  <h2>uniendo ramas</h2>
+                  <p>Primero debemos posicionarnos sobre la rama que
+                    queramos y llamar desde esta la rama que queremos fusionar a la que estamos</p>
+
+                  <h4>git checkout &lt;rama&gt;</h4>
+                  <p>Cambia a la rama especificada.</p>
+
+                  <h4>git merge &lt;otra-rama&gt;</h4>
+                  <p>Une la rama actual con otra rama especificada.</p>
+
+                  <h4>git branch -D &lt;rama&gt;</h4>
+                  <p>Elimina de forma forzada la rama especificada, incluso si hay cambios que no se han fusionado.</p>
+
+                  <h4>git push origin --delete &lt;rama&gt;</h4>
+                  <p>eliminar la rama del repositorio remoto.</p>
+
+                  <h2>Trabajar en un proyecto desde otra computadora</h2>
+
+                  <h4>git clone &lt;URL-del-repositorio&gt;</h4>
+                  <p>Clonar el repositorio en tu computadora portátil.</p>
+
+                  <h4>git config --global user.name "Tu Nombre"</h4>
+                  <p>Establece el nombre de usuario que se utilizará para las confirmaciones de commit.</p>
+
+                  <h4>git config --global user.email "tu_email@example.com"</h4>
+                  <p>Establece el correo electrónico que se utilizará para las confirmaciones de commit.</p>
+
+                  <h4>git config --list</h4>
+                  <p>Muestra la configuración actual de Git para el repositorio y comprobamos si guardamos bien el
+                    usuario.</p>
+
+                  <h4>git add .</h4>
+                  <p>Agrega un archivo al área de preparación para ser incluido en el próximo commit. la parte del "."
+                    podemos remplazarla por el archivo espesifico que queremos que guarde.</p>
+
+                  <h4>git commit -m "mensaje"</h4>
+                  <p>Guarda los cambios realizados en el repositorio localmente.</p>
+
+                  <h4>git push origin &lt;rama&gt;</h4>
+                  <p>Sube los cambios locales a un repositorio remoto en la rama especificada.</p>
+
+                  <h4>git pull origin &lt;rama&gt;</h4>
+                  <p>Descargar los cambios desde el repositorio remoto y actualizar tu copia local desde la otra
+                    computadora.</p>
+
+
+                </section>
+              </div>
+            </details>
+          </li>
+          <li>
+            <h3>GitHub</h3>
+            <p>Es un repositorio remoto que nos sirve para guardar nuestro proyecto de forma temporal. <a
+                href="https://learngitbranching.js.org/?locale=es_AR">aca</a></p>
+          </li>
+        </ul>
+
+      </section>
+
+    </section>
+
+    <!-- scrips -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"></script>
+  </main>
+
+  <footer>
+    <div class="posdata">
+      <h2>La Ayuda De Todo Programador</h2>
+    </div>
+    <p>creador: brian</p>
+  </footer>
+</body>
+
+</html>
