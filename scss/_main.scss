@@ -1,0 +1,87 @@
+main {
+
+    // Estilos para el encabezado principal 
+    h1 {
+        text-align: center;
+        color: #333;
+        font-family: 'Arial Black', sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+        margin: 20px;
+
+        +p {
+            margin: 0 20px;
+            font-size: 20px;
+        }
+    }
+
+    // Estilos para los encabezados de sección 
+    h2 {
+        text-align: center;
+        color: #333;
+        font-family: 'Arial Black', sans-serif;
+        font-size: 1.8em;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 15px;
+
+        +p {
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+
+    // Estilos para los subtítulos 
+    h3 {
+        text-align: center;
+        color: #666;
+        font-family: 'Arial Black', sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 25px 0 10px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #979797;
+
+        +p {
+            text-align: center;
+        }
+    }
+
+    // estilos para las propiedades o comandos
+    h4 {
+        color: #333;
+        font-family: Arial, sans-serif;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    // Estilos para el contenido 
+    p {
+        color: #666;
+        font-family: Arial, sans-serif;
+        font-size: 1em;
+        line-height: 1.5;
+    }
+}
+
+.contenedor {
+    margin: 20px;
+    padding: 0 20px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+}
+
+.img-center {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+
+    img {
+        max-width: 400px;
+        max-height: 300px;
+        width: 100%;
+        height: auto;
+    }
+}

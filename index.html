@@ -14,361 +14,390 @@
 
 <body>
     <!-- ENCABEZADO-->
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <p class="navbar-brand header-logo">Resumen Programacion</p>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-
-          <section class="navbar-nav column-gap-3">
-            <div class="btn-group">
-              <button type="button" class="btn btn-danger"><a class="header-menu nav-link"
-                  href="./index.html">HTML</a></button>
-              <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="visually-hidden">Toggle Dropdown</span>
-              </button>
-              <ul class="dropdown-menu header-opciones">
-                <li><a class="dropdown-item" href="./index.html#pagina-y-sitio-web">Pagina y sitio web</a></li>
-                <li><a class="dropdown-item" href="./index.html#pasos-previos">Pasos previos</a></li>
-                <li><a class="dropdown-item" href="./index.html#consejos">Consejos</a></li>
-                <li><a class="dropdown-item" href="./index.html#semantica">Semantica html y contenedores</a></li>
-                <li><a class="dropdown-item" href="./index.html#imagen-videos-audio-mapa">Agregar imagenes y otros</a>
-                </li>
-                <li><a class="dropdown-item" href="./index.html#agregar-enlaces">Agregar Enlaces</a></li>
-                <li><a class="dropdown-item" href="./index.html#crear-listas">Crear lista</a></li>
-                <li><a class="dropdown-item" href="./index.html#crear-tabla">Crear tabla</a></li>
-              </ul>
-            </div>
-
-            <div class="btn-group">
-              <button type="button" class="btn btn-danger"><a class="header-menu nav-link"
-                  href="./pages/css.html">CSS</a></button>
-              <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="visually-hidden">Toggle Dropdown</span>
-              </button>
-              <ul class="dropdown-menu header-opciones">
-                <li><a class="dropdown-item" href="./pages/css.html#TIPOS-DE-SELECTORES">Tipos de selectores</a></li>
-                <li><a class="dropdown-item" href="./pages/css.html#TIPOS-DE-PSEUDO-CLASSES">Tipos de pseudo-classes</a></li>
-                <li><a class="dropdown-item" href="./pages/css.html#UNIDADES-DE-MEDIDA">Unidades de medida</a></li>
-                <li><a class="dropdown-item" href="./pages/css.html#COMO-AGREGAR-UNA-FUENTE">Como agregar una fuente</a> </li>
-                <li><a class="dropdown-item" href="./pages/css.html#PROPIEDADES-DE-TEXTO">Propiedades de texto</a></li>
-                <li><a class="dropdown-item" href="./pages/css.html#FONDO-DE-LA-PAGINA">Fondo de la pagina</a></li>
-                <li><a class="dropdown-item" href="./pages/css.html#PROPIEDADES-DE-CAJAS">Propiedades de cajas</a> </li>
-                <li><a class="dropdown-item" href="./pages/css.html#POSITION">Position</a></li>
-                <li><a class="dropdown-item" href="./pages/css.html#DISPLAY">Display</a></li>
-                <li><a class="dropdown-item" href="./pages/css.html#diseño-responsive">Diseño Responsive</a></li>
-              </ul>
-            </div>
-          </section>
-
-        </div>
-      </div>
-    </nav>
-  </header>
-
-    <main>
-        <section class="contenido">
-            <h1 id="html">QUE ES HTML</h1>
-            <div class="texaling">
-                <p>es la base del desarrollo web, le da la estructura, vendría a ser el esqueleto de la web, este tiene
-                    muy poca apariencia por eso luego usamos css. por ende con html no quedaria bonito</p>
-                <p>Su nomeclatura por default al crear el archivo es index.html</p>
-                <div class="img-center">
-                    <img src="../assets/css-estructura.png" alt="" width="25%">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <div>
+                    <p class="titulo-nav">Html</p>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <div class="navbar-nav">
+                        <article class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Html
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./index.html#html">Que es Html</a></li>
+                                <li><a class="dropdown-item" href="./index.html#pagina-y-sitio-web">Pagina y sitio
+                                        web</a></li>
+                                <li><a class="dropdown-item" href="./index.html#pasos-previos">Pasos previos</a></li>
+                                <li><a class="dropdown-item" href="./index.html#consejos">Consejos</a></li>
+                                <li><a class="dropdown-item" href="./index.html#semantica">Semantica html y
+                                        contenedores</a></li>
+                                <li><a class="dropdown-item" href="./index.html#imagen-videos-audio-mapa">Agregar
+                                        imagenes y otros</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./index.html#agregar-enlaces">Agregar Enlaces</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./index.html#crear-listas">Crear lista</a></li>
+                                <li><a class="dropdown-item" href="./index.html#crear-tabla">Crear tabla</a></li>
+                            </ul>
+                        </article>
+                        <article class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Css
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pages/css.html#TIPOS-DE-SELECTORES">Tipos de
+                                        selectores</a></li>
+                                <li><a class="dropdown-item" href="./pages/css.html#TIPOS-DE-PSEUDO-CLASSES">Tipos de
+                                        pseudo-classes</a></li>
+                                <li><a class="dropdown-item" href="./pages/css.html#UNIDADES-DE-MEDIDA">Unidades de
+                                        medida</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/css.html#COMO-AGREGAR-UNA-FUENTE">Como
+                                        agregar una
+                                        fuente</a> </li>
+                                <li><a class="dropdown-item" href="./pages/css.html#PROPIEDADES-DE-TEXTO">Propiedades de
+                                        texto</a></li>
+                                <li><a class="dropdown-item" href="./pages/css.html#FONDO-DE-LA-PAGINA">Fondo de la
+                                        pagina</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/css.html#PROPIEDADES-DE-CAJAS">Propiedades de
+                                        cajas</a> </li>
+                                <li><a class="dropdown-item" href="./pages/css.html#POSITION">Position</a></li>
+                                <li><a class="dropdown-item" href="./pages/css.html#DISPLAY">Display</a></li>
+                                <li><a class="dropdown-item" href="./pages/css.html#diseño-responsive">Diseño
+                                        Responsive</a>
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Git y Github
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pages/git.html#git">Git</a></li>
+                                <li><a class="dropdown-item" href="./pages/git.html#1">Creando un repositorio</a></li>
+                                <li><a class="dropdown-item" href="./pages/git.html#2">Uniendo ramas</a></li>
+                                <li><a class="dropdown-item" href="./pages/git.html#3">Trabajando desde otra pc</a></li>
+                                <li><a class="dropdown-item" href="./pages/git.html#4">Volver un commit atras</a></li>
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/git.html#5">Github</a></li>
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
                 </div>
             </div>
+        </nav>
+    </header>
 
-            <h2 id="pagina-y-sitio-web">PAGINA Y SITIO WEB</h2>
-            <section class="flex">
-                <ul>
-                    <li>
-                        <h3>Pagina Web</h3>
-                        <p>Una página web es un documento individual en la web que se puede acceder mediante un
-                            navegador web.</p>
-                    </li>
-                    <li>
-                        <h3>Sitio Web</h3>
-                        <p>Un sitio web es un conjunto de páginas web relacionadas y vinculadas entre sí bajo un dominio
-                            específico. Un sitio web puede incluir varias páginas que están diseñadas y organizadas para
-                            ofrecer información coherente o servicios relacionados.</p>
-                    </li>
-                </ul>
-            </section>
+    <main>
+        
+            <h1 id="html">QUE ES HTML</h1>
+            <p>Es la base del desarrollo web, le da la estructura, vendría a ser el esqueleto de la web, este tiene
+                muy poca apariencia por eso luego usamos css. por ende con html no quedaria bonito. Su nomeclatura por default al crear el archivo es index.html</p>
+            <div class="img-center">
+                <img src="../assets/css-estructura.png" alt="">
+            </div>
 
-            <h2 id="pasos-previos">PASOS PREVIOS</h2>
-            <section class="flex">
-                <ul>
-                    <li>
-                        <h3>Sketch:</h3>
-                        <p>Conciste en dibujar en un boceto una vista previa de la idea de la pagina</p>
-                    </li>
-                    <li>
-                        <h3>Wireframe:</h3>
-                        <p>Vendría a ser realizar la pagina con un poco más de detalle, esto se puede hacer con paginas
-                            como <a href="https://whimsical.com/" target="_blank">whimsical</a>, pero tambien podemos
-                            usar cualquier
-                            tipo de photoshop.</p>
-                    </li>
-                    <li>
-                        <h3>Mockup: </h3>
-                        <p>diseño de mas calidad donde se usan imágenes reales y textos y logo real.</p>
-                    </li>
-                    <li>
-                        <h3>Prototipo funcional: </h3>
-                        <p>es un prototipo de la pagina con todas las funciones para luego pasarlo a código. esto no los
-                            entregaria el encargado de diseño en caso de un proyecto particular no hace falta</p>
-                    </li>
-                    <li>
-                        <h3>Diseño final </h3>
-                        <p>te entregan el proyecto en figma o adobe donde podes ver lo colores tipo de letra para que lo
-                            pases a código. esto no los entregaria el encargado de diseño en caso de un proyecto
-                            particular no hace falta</p>
-                    </li>
-                </ul>
-            </section>
+            <section class="contenedor">
+            <h3 id="pagina-y-sitio-web">PAGINA Y SITIO WEB</h3>
+            <ul>
+                <li>
+                    <h4>Pagina Web</h4>
+                    <p>Una página web es un documento individual en la web que se puede acceder mediante un
+                        navegador web.</p>
+                </li>
+                <li>
+                    <h4>Sitio Web</h4>
+                    <p>Un sitio web es un conjunto de páginas web relacionadas y vinculadas entre sí bajo un dominio
+                        específico. Un sitio web puede incluir varias páginas que están diseñadas y organizadas para
+                        ofrecer información coherente o servicios relacionados.</p>
+                </li>
+            </ul>
 
-            <h2 id="consejos">CONSEJOS</h2>
-            <section class="flex">
-                <ul>
-                    <li>
-                        <h3>Uso de Caracteres Especiales:</h3>
-                        <p>Evita el uso de caracteres especiales, tildes o símbolos raros en los nombres de archivos,
-                            carpetas y recursos web. Opta por nombres simples y con caracteres alfanuméricos.</p>
-                    </li>
-                    <li>
-                        <h3>Comentarios Significativos:</h3>
-                        <p>Utiliza comentarios HTML de manera efectiva para explicar secciones de código. Esto facilita
-                            la comprensión del código para ti y otros desarrolladores que puedan revisarlo.
-                    </li>
-                    <li>
-                        <h3>Indentación y Organizació:</h3>
-                        <p>Mantiene una buena estructura de indentación y organiza tu código de manera clara. Esto
-                            mejora la legibilidad y facilita el mantenimiento del código a largo plazo.</p>
-                    </li>
-                    <li>
-                        <h3>Peso del Código:</h3>
-                        <p>Recuerda que cada imagen que pongas en tu codigo podria hacer que este pese mas haciendo
-                            lenta la pagina. usa aplicaciones que las optimicen para pesar lo menos posible.</p>
-                    </li>
-                    <li>
-                        <h3>Accesibilidad:</h3>
-                        <p>Diseña y desarrolla tu contenido web pensando en la accesibilidad. Utiliza atributos como alt
-                            en imágenes</p>
-                    </li>
-                </ul>
-            </section>
+            <h3 id="pasos-previos">PASOS PREVIOS</h3>
 
-            <h2 id="Metadatos">METADATOS</h2>
-            <section class="flex">
-                <ul>
-                    <li>
-                        <h3>&lt;html&gt;</h3>
-                        <p>Representa la raiz de un documento HTML. El resto de elementos descienden de este elemento.
-                        </p>
-                    </li>
-                    <li>
-                        <h3>&lt;base&gt;</h3>
-                        <p>Especifica la dirección URL base que se utilizará para todas las direcciones URL relativas
-                            contenidas dentro de un documento.</p>
-                    </li>
-                    <li>
-                        <h3>&lt;head&gt;
-                        </h3>
-                        <p>Provee información general (metadatos) acerca del documento, incluyendo su título y enlaces a
-                            scripts y hojas de estilos.</p>
-                    </li>
-                    <li>
-                        <h3>&lt;link&gt;
-                        </h3>
-                        <p>Especifica la relación entre el documento actual y un recurso externo. Los usos posibles de
-                            este elemento incluyen la definición de un marco relacional para navegación. Este elemento
-                            es más frecuentemente usado para enlazar hojas de estilos.</p>
-                    </li>
-                    <li>
-                        <h3>&lt;meta&gt;
-                        </h3>
-                        <p>Re utiliza para proporcionar información adicional sobre el documento HTML. Esta etiqueta no
-                            tiene contenido visible en la página, pero juega un papel importante en la configuración de
-                            la información del documento para el navegador y otros agentes de usuario.</p>
-                    </li>
-                    <li>
-                        <h3>&lt;style&gt;
-                        </h3>
-                        <p>Se utiliza para poner estilos directamente en el html. sin embargo lo recomendable es tenes
-                            una hoja aparte que sea de estilos o css</p>
-                    </li>
-                    <li>
-                        <h3>&lt;ticle&gt;
-                        </h3>
-                        <p>Define el título del documento que se muestra en un browser la barra de título o la pestaña
-                            de una página.</p>
-                    </li>
-                    <li>
-                        <h3>&lt;body&gt;
-                        </h3>
-                        <p>Representa el contenido de un documento HTML. Solo puede haber un elemento &lt;body&gt; en un
-                            documento.
-                        </p>
-                    </li>
-                </ul>
-            </section>
+            <ul>
+                <li>
+                    <h4>Sketch:</h4>
+                    <p>Conciste en dibujar en un boceto una vista previa de la idea de la pagina</p>
+                </li>
+                <li>
+                    <h4>Wireframe:</h4>
+                    <p>Vendría a ser realizar la pagina con un poco más de detalle, esto se puede hacer con paginas
+                        como <a href="https://whimsical.com/" target="_blank">whimsical</a>, pero tambien podemos
+                        usar cualquier
+                        tipo de photoshop.</p>
+                </li>
+                <li>
+                    <h4>Mockup: </h4>
+                    <p>diseño de mas calidad donde se usan imágenes reales y textos y logo real.</p>
+                </li>
+                <li>
+                    <h4>Prototipo funcional: </h4>
+                    <p>es un prototipo de la pagina con todas las funciones para luego pasarlo a código. esto no los
+                        entregaria el encargado de diseño en caso de un proyecto particular no hace falta</p>
+                </li>
+                <li>
+                    <h4>Diseño final </h4>
+                    <p>te entregan el proyecto en figma o adobe donde podes ver lo colores tipo de letra para que lo
+                        pases a código. esto no los entregaria el encargado de diseño en caso de un proyecto
+                        particular no hace falta</p>
+                </li>
+            </ul>
 
-            <h2 id="semantica">SEMANTICA HTML y CONTENEDORES</h2>
-            <section class="flex">
-                <ul>
-                    <li>
-                        <h3>&lt;header&gt;</h3>
-                        <p>Define la sección de encabezado de un documento o de una sección específica. Puede contener
-                            elementos como títulos, logotipos o enlaces de navegación.</p>
-                    </li>
-                    <li>
-                        <h3>&lt;nav&gt;</h3>
-                        <p>Representa una sección de navegación que contiene enlaces a otras páginas o recursos dentro
-                            del sitio web. solo se usa uno por pagina</p>
-                    </li>
-                    <li>
-                        <h3>&lt;main&gt;</h3>
-                        <p>Define el contenido principal de un documento. Debería evitar incluir encabezados, pies de
-                            página o barras laterales dentro de este elemento.</p>
-                    </li>
-                    <li>
-                        <h3>&lt;article&gt;</h3>
-                        <p>Representa un contenido independiente y autónomo, como un artículo, una entrada de blog o un
-                            comentario. Debería ser reutilizable y distribuible de manera independiente.</p>
-                    </li>
-                    <li>
-                        <h3>&lt;section&gt;</h3>
-                        <p>Define una sección genérica en un documento. Puede contener contenido temáticamente
-                            relacionado y puede usarse dentro de cualquier etiqueta semantica.</p>
-                    </li>
-                    <li>
-                        <h3>&lt;aside&gt;</h3>
-                        <p>Define contenido relacionado pero secundario, como barras laterales, anuncios o información
-                            adicional no central para el contenido principal.</p>
-                    </li>
-                    <li>
-                        <h3>&lt;footer&gt;</h3>
-                        <p>Define la sección de pie de página de un documento o de una sección específica. Puede
-                            contener información de derechos de autor, enlaces de contacto u otros elementos de cierre.
-                        </p>
-                    </li>
-                    <li>
-                        <h3>&lt;table&gt;</h3>
-                        <p>Define la estructura de la tabla. Puede contener otras etiquetas como &lt;thead&gt;,
-                            &lt;tbody&gt; y &lt;tfoot&gt; para organizar la tabla en secciones.</p>
-                    </li>
-                    <li>
-                        <h3>&lt;div&gt;</h3>
-                        <p>Es un contenedor de bloque utilizado para agrupar, el cual ocupa todo el re no tiene peso
-                            semantico es decir vale menos que todos los contenedores dichos anteriormente.
-                        </p>
-                    </li>
-                    <li>
-                        <h3>&lt;span&gt;</h3>
-                        <p>Es un contenedor en linea utilizado para agrupar, el cual no tiene peso semantico es decir
-                            vale menos que todos los contenedores dichos anteriormente.
-                        </p>
-                    </li>
-                </ul>
-            </section>
 
-            <h2 id="imagen-videos-audio-mapa">AGREGAR IMAGENES y OTROS</h2>
-            <section class="flex">
-                <ul>
-                    <li>
-                        <h3>&lt;img&gt;</h3>
-                        <p>Una etiqueta muy simple donde dentro del atributo src escribiremos la direccion de la imagen.
-                            Tambien es importante que dentro del atributo alt escribamos una descripcion breve de la
-                            imagen.</p>
-                    </li>
-                    <li>
-                        <h3>&lt;video&gt;</h3>
-                        <p>Una etiqueta muy simple donde dentro del atributo src escribiremos la direccion del video.
-                    </li>
-                    <li>
-                        <h3>&lt;audio/audio>&gt;</h3>
-                        <p>Una etiqueta muy simple donde dentro del atributo src escribiremos la direccion del audio .
-                        </p>
-                    </li>
-                    <li>
-                        <h3>&lt;iframe&gt;</h3>
-                        <p>Es un código html que se consigue desde el video en youtube por ejemplo o google maps al
-                            tocar compartir y luego insertar. Entonces nos da el
-                            código, el cual debemos copiar y pegar en el html</p>
-                    </li>
-                </ul>
-            </section>
+            <h3 id="consejos">CONSEJOS</h3>
 
-            <h2 id="agregar-enlaces">AGREGAR ENLACES</h2>
+            <ul>
+                <li>
+                    <h4>Uso de Caracteres Especiales:</h4>
+                    <p>Evita el uso de caracteres especiales, tildes o símbolos raros en los nombres de archivos,
+                        carpetas y recursos web. Opta por nombres simples y con caracteres alfanuméricos.</p>
+                </li>
+                <li>
+                    <h4>Comentarios Significativos:</h4>
+                    <p>Utiliza comentarios HTML de manera efectiva para explicar secciones de código. Esto facilita
+                        la comprensión del código para ti y otros desarrolladores que puedan revisarlo.
+                </li>
+                <li>
+                    <h4>Indentación y Organizació:</h4>
+                    <p>Mantiene una buena estructura de indentación y organiza tu código de manera clara. Esto
+                        mejora la legibilidad y facilita el mantenimiento del código a largo plazo.</p>
+                </li>
+                <li>
+                    <h4>Peso del Código:</h4>
+                    <p>Recuerda que cada imagen que pongas en tu codigo podria hacer que este pese mas haciendo
+                        lenta la pagina. usa aplicaciones que las optimicen para pesar lo menos posible.</p>
+                </li>
+                <li>
+                    <h4>Accesibilidad:</h4>
+                    <p>Diseña y desarrolla tu contenido web pensando en la accesibilidad. Utiliza atributos como alt
+                        en imágenes</p>
+                </li>
+            </ul>
+
+
+            <h3 id="Metadatos">METADATOS</h3>
+
+            <ul>
+                <li>
+                    <h4>&lt;html&gt;</h4>
+                    <p>Representa la raiz de un documento HTML. El resto de elementos descienden de este elemento.
+                    </p>
+                </li>
+                <li>
+                    <h4>&lt;base&gt;</h4>
+                    <p>Especifica la dirección URL base que se utilizará para todas las direcciones URL relativas
+                        contenidas dentro de un documento.</p>
+                </li>
+                <li>
+                    <h4>&lt;head&gt;
+                    </h4>
+                    <p>Provee información general (metadatos) acerca del documento, incluyendo su título y enlaces a
+                        scripts y hojas de estilos.</p>
+                </li>
+                <li>
+                    <h4>&lt;link&gt;
+                    </h4>
+                    <p>Especifica la relación entre el documento actual y un recurso externo. Los usos posibles de
+                        este elemento incluyen la definición de un marco relacional para navegación. Este elemento
+                        es más frecuentemente usado para enlazar hojas de estilos.</p>
+                </li>
+                <li>
+                    <h4>&lt;meta&gt;
+                    </h4>
+                    <p>Re utiliza para proporcionar información adicional sobre el documento HTML. Esta etiqueta no
+                        tiene contenido visible en la página, pero juega un papel importante en la configuración de
+                        la información del documento para el navegador y otros agentes de usuario.</p>
+                </li>
+                <li>
+                    <h4>&lt;style&gt;
+                    </h4>
+                    <p>Se utiliza para poner estilos directamente en el html. sin embargo lo recomendable es tenes
+                        una hoja aparte que sea de estilos o css</p>
+                </li>
+                <li>
+                    <h4>&lt;ticle&gt;
+                    </h4>
+                    <p>Define el título del documento que se muestra en un browser la barra de título o la pestaña
+                        de una página.</p>
+                </li>
+                <li>
+                    <h4>&lt;body&gt;
+                    </h4>
+                    <p>Representa el contenido de un documento HTML. Solo puede haber un elemento &lt;body&gt; en un
+                        documento.
+                    </p>
+                </li>
+            </ul>
+
+
+            <h3 id="semantica">SEMANTICA HTML y CONTENEDORES</h3>
+
+            <ul>
+                <li>
+                    <h4>&lt;header&gt;</h4>
+                    <p>Define la sección de encabezado de un documento o de una sección específica. Puede contener
+                        elementos como títulos, logotipos o enlaces de navegación.</p>
+                </li>
+                <li>
+                    <h4>&lt;nav&gt;</h4>
+                    <p>Representa una sección de navegación que contiene enlaces a otras páginas o recursos dentro
+                        del sitio web. solo se usa uno por pagina</p>
+                </li>
+                <li>
+                    <h4>&lt;main&gt;</h4>
+                    <p>Define el contenido principal de un documento. Debería evitar incluir encabezados, pies de
+                        página o barras laterales dentro de este elemento.</p>
+                </li>
+                <li>
+                    <h4>&lt;article&gt;</h4>
+                    <p>Representa un contenido independiente y autónomo, como un artículo, una entrada de blog o un
+                        comentario. Debería ser reutilizable y distribuible de manera independiente.</p>
+                </li>
+                <li>
+                    <h4>&lt;section&gt;</h4>
+                    <p>Define una sección genérica en un documento. Puede contener contenido temáticamente
+                        relacionado y puede usarse dentro de cualquier etiqueta semantica.</p>
+                </li>
+                <li>
+                    <h4>&lt;aside&gt;</h4>
+                    <p>Define contenido relacionado pero secundario, como barras laterales, anuncios o información
+                        adicional no central para el contenido principal.</p>
+                </li>
+                <li>
+                    <h4>&lt;footer&gt;</h4>
+                    <p>Define la sección de pie de página de un documento o de una sección específica. Puede
+                        contener información de derechos de autor, enlaces de contacto u otros elementos de cierre.
+                    </p>
+                </li>
+                <li>
+                    <h4>&lt;table&gt;</h4>
+                    <p>Define la estructura de la tabla. Puede contener otras etiquetas como &lt;thead&gt;,
+                        &lt;tbody&gt; y &lt;tfoot&gt; para organizar la tabla en secciones.</p>
+                </li>
+                <li>
+                    <h4>&lt;div&gt;</h4>
+                    <p>Es un contenedor de bloque utilizado para agrupar, el cual ocupa todo el re no tiene peso
+                        semantico es decir vale menos que todos los contenedores dichos anteriormente.
+                    </p>
+                </li>
+                <li>
+                    <h4>&lt;span&gt;</h4>
+                    <p>Es un contenedor en linea utilizado para agrupar, el cual no tiene peso semantico es decir
+                        vale menos que todos los contenedores dichos anteriormente.
+                    </p>
+                </li>
+            </ul>
+
+
+            <h3 id="imagen-videos-audio-mapa">AGREGAR IMAGENES y OTROS</h3>
+
+            <ul>
+                <li>
+                    <h4>&lt;img&gt;</h4>
+                    <p>Una etiqueta muy simple donde dentro del atributo src escribiremos la direccion de la imagen.
+                        Tambien es importante que dentro del atributo alt escribamos una descripcion breve de la
+                        imagen.</p>
+                </li>
+                <li>
+                    <h4>&lt;video&gt;</h4>
+                    <p>Una etiqueta muy simple donde dentro del atributo src escribiremos la direccion del video.
+                </li>
+                <li>
+                    <h4>&lt;audio/audio>&gt;</h4>
+                    <p>Una etiqueta muy simple donde dentro del atributo src escribiremos la direccion del audio .
+                    </p>
+                </li>
+                <li>
+                    <h4>&lt;iframe&gt;</h4>
+                    <p>Es un código html que se consigue desde el video en youtube por ejemplo o google maps al
+                        tocar compartir y luego insertar. Entonces nos da el
+                        código, el cual debemos copiar y pegar en el html</p>
+                </li>
+            </ul>
+
+
+            <h3 id="agregar-enlaces">AGREGAR ENLACES</h3>
             <p>La etiqueta para agregar enlaces es &lt;a href=""&gt;</p>
-            <section class="flex">
-                <ul>
-                    <li>
-                        <h3>Enlace absoluto:</h3>
-                        <p>Te saca del sitio web (redes sociales)</p>
-                    </li>
-                    <li>
-                        <h3>Enlace relativo:</h3>
-                        <p>Te lleva a otra pagina, pero dentro de tu proyecto</p>
-                    </li>
-                    <li>
-                        <h3>Enlace interno:</h3>
-                        <p>Dentro de la pagina en la que estamos hace scroll hasta donde queramos.</p>
-                    </li>
-                    <li>
-                        <h3>Enlace interno relativo:</h3>
-                        <p>Nos lleva a otra pagina del proyecto y hace scroll hasta donde queramos</p>
-                    </li>
-                </ul>
-            </section>
 
-            <h2 id="crear-listas">CREAR LISTAS</h2>
-            <section class="flex">
-                <ul>
-                    <li>
-                        <h3>&lt;ul&gt;</h3>
-                        <p>lista desordenada siempre su hijo va a ser li</p>
-                    </li>
-                    <li>
-                        <h3>&lt;ol&gt;</h3>
-                        <p>lista ordenada siempre su hijo va a ser li</p>
-                    </li>
-                </ul>
-            </section>
+            <ul>
+                <li>
+                    <h4>Enlace absoluto:</h4>
+                    <p>Te saca del sitio web (redes sociales)</p>
+                </li>
+                <li>
+                    <h4>Enlace relativo:</h4>
+                    <p>Te lleva a otra pagina, pero dentro de tu proyecto</p>
+                </li>
+                <li>
+                    <h4>Enlace interno:</h4>
+                    <p>Dentro de la pagina en la que estamos hace scroll hasta donde queramos.</p>
+                </li>
+                <li>
+                    <h4>Enlace interno relativo:</h4>
+                    <p>Nos lleva a otra pagina del proyecto y hace scroll hasta donde queramos</p>
+                </li>
+            </ul>
 
-            <h2 id="crear-tabla">CREAR TABLA</h2>
+
+            <h3 id="crear-listas">CREAR LISTAS</h3>
+
+            <ul>
+                <li>
+                    <h4>&lt;ul&gt;</h4>
+                    <p>lista desordenada siempre su hijo va a ser li</p>
+                </li>
+                <li>
+                    <h4>&lt;ol&gt;</h4>
+                    <p>lista ordenada siempre su hijo va a ser li</p>
+                </li>
+            </ul>
+
+
+            <h3 id="crear-tabla">CREAR TABLA</h3>
             <p>La tabla tiene su propia etiqueta semantica la cual es &lt;table&gt;.</p>
-            <section class="flex">
-                <ul>
-                    <li>
-                        <h3>&lt;thead&gt;</h3>
-                        <p>define la sección de encabezado de la tabla de forma semantica.</p>
-                    </li>
-                    <li>
-                        <h3>&lt;tbody&gt;</h3>
-                        <p>define la sección principal de datos de la tabla de forma semantica.</p>
-                    </li>
-                    <li>
-                        <h3>&lt;tfoot&gt;</h3>
-                        <p>Define la sección de pie de tabla de forma semantica.</p>
-                    </li>
-                    <li>
-                        <h3>&lt;th&gt;</h3>
-                        <p>Define una celda de encabezado. Se utiliza para las celdas en la primera fila o columna para
-                            representar encabezados.</p>
-                    </li>
-                    <li>
-                        <h3>&lt;tr&gt;</h3>
-                        <p>Define una fila de la tabla.</p>
-                    </li>
-                    <li>
-                        <h3>&lt;td&gt;</h3>
-                        <p>Define una celda de datos. Se utiliza para el contenido de las celdas</p>
-                    </li>
-                </ul>
-            </section>
+
+            <ul>
+                <li>
+                    <h4>&lt;thead&gt;</h4>
+                    <p>define la sección de encabezado de la tabla de forma semantica.</p>
+                </li>
+                <li>
+                    <h4>&lt;tbody&gt;</h4>
+                    <p>define la sección principal de datos de la tabla de forma semantica.</p>
+                </li>
+                <li>
+                    <h4>&lt;tfoot&gt;</h4>
+                    <p>Define la sección de pie de tabla de forma semantica.</p>
+                </li>
+                <li>
+                    <h4>&lt;th&gt;</h4>
+                    <p>Define una celda de encabezado. Se utiliza para las celdas en la primera fila o columna para
+                        representar encabezados.</p>
+                </li>
+                <li>
+                    <h4>&lt;tr&gt;</h4>
+                    <p>Define una fila de la tabla.</p>
+                </li>
+                <li>
+                    <h4>&lt;td&gt;</h4>
+                    <p>Define una celda de datos. Se utiliza para el contenido de las celdas</p>
+                </li>
+            </ul>
+
         </section>
 
         <!-- scrips -->
@@ -382,9 +411,7 @@
     </main>
 
     <footer>
-        <div class="posdata">
-            <h2>La Ayuda De Todo Programador</h2>
-        </div>
+        <h5>La Ayuda De Todo Programador</h5>
         <p>creador: brian</p>
     </footer>
 </body>
